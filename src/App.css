@@ -1,0 +1,169 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 40px;
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #344C3C;
+}
+
+.nav-left{
+  display: flex;
+  justify-content: center;
+  padding-right: 750px;
+}
+
+.navbar img {
+  align-self: center;
+  margin-right: 40px;
+}
+
+.nav-mobile{
+  display: none;
+  height: 80px;
+}
+
+.mobile-menu{
+  opacity: 0;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
+  top:0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  display: flex;
+  background-color: white;
+  pointer-events: none;
+}
+
+.arrow{
+  font-size: 18px;
+  color: #344C3C;
+  align-self: center;
+  padding-top: 3px;
+  padding-right: 20px;
+}
+
+.nav-right{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #344C3C;
+  align-items: center;
+}
+
+.nav-right li{
+  list-style-type: none;
+  padding-right: 40px;
+}
+
+.nav-button{
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #344C3C;
+}
+
+.header-section{
+  width: 100%;
+}
+
+.bg-image{
+  width: 100%;
+  height: auto;
+}
+
+.title{
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 700px) {
+  .navbar{
+   display: none;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+  .nav-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-icon{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    z-index: 7;
+    color: #344C3C;
+    font-size: 20px; /* Adjust the size as needed */
+    cursor: pointer;
+  }
+
+  .close-icon{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  }
+
+  li {
+    list-style-type: none;
+    font-family: 'manrope', sans-serif;
+}
+
+  .mobile-menu{
+    opacity: 0;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    top:0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    display: flex;
+    background-color: white;
+    pointer-events: none;
+  }
+
+ .isVisible {
+  opacity: 1;  
+  pointer-events: auto;
+  }
+
+  .logo-mobile {
+    margin-top: 25px;
+    margin-left: 20px;
+    width: 100px;
+  }
+
+  .title{
+    font-size: 20px;
+    top: 19%;
+  }
+  
+}
